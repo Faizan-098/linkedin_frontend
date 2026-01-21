@@ -11,7 +11,7 @@ import { setPostModalState } from "../redux/features/postSlice.js";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { getProfileData } from "../redux/features/profile.js";
-import CreatePost from "../components/createPost.jsx";
+import CreatePost from "../components/CreatePost.jsx";
 
 const Home = () => {
   // server-url
