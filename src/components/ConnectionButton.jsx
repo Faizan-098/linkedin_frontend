@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-const socket = io("http://localhost:8000");
+// server-url
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+const socket = io(SERVER_URL);
 const ConnectionButton = ({ authorId }) => {
-  // server-url
-  const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
   const navigate = useNavigate();
   // select state
