@@ -62,7 +62,7 @@ const Navbar = () => {
         withCredentials: true,
       });
 
-      await dispatch(setUserData(null)).unwrap();
+       dispatch(setUserData(null));
       navigate("/login");
     } catch (error) {
       toast(error?.response?.data?.message || error.message);
